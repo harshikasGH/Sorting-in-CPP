@@ -1,22 +1,18 @@
-# 🔄 Sorting in C++
+Sorting in C++
 
-## 🎯 Aim  
+Aim  
 To study and implement **Sorting algorithms in C++**, including **Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, Heap Sort, and Bucket Sort**, and to compare their efficiency, time complexity, and use cases.
 
----
-
-## 📚 Theory  
-
+Theory  
 Sorting is the process of arranging data in a particular order (ascending or descending). Efficient sorting is crucial for optimizing search algorithms and data processing.
 
-### 🔑 Characteristics of Sorting Algorithms  
+Characteristics of Sorting Algorithms  
 - **Stability**: Maintains the relative order of equal elements.  
 - **In-place vs. Out-of-place**: Whether extra memory is required.  
 - **Time Complexity**: Efficiency in best, worst, and average cases.  
 - **Comparison-based vs. Non-comparison-based**: Most classical algorithms are comparison-based.  
 
-### 🔄 Types of Sorting Algorithms  
-
+Types of Sorting Algorithms  
 1. **Bubble Sort** → Repeatedly swaps adjacent elements if they are in the wrong order.  
 2. **Selection Sort** → Repeatedly selects the minimum element and places it at the correct position.  
 3. **Insertion Sort** → Builds the sorted array one element at a time by inserting into the correct position.  
@@ -25,11 +21,8 @@ Sorting is the process of arranging data in a particular order (ascending or des
 6. **Heap Sort** → Builds a max heap and repeatedly extracts the maximum element.  
 7. **Bucket Sort** → Distributes elements into buckets, sorts each bucket individually, and then concatenates them. Works best when input is uniformly distributed.  
 
----
-
-## 📋 Algorithms  
-
-### 🧾 Bubble Sort  
+Algorithms  
+Bubble Sort  
 1. Start  
 2. Input array of size `n`.  
 3. Repeat for `i = 0` to `n-1`:  
@@ -37,9 +30,7 @@ Sorting is the process of arranging data in a particular order (ascending or des
      - If `arr[j] > arr[j+1]`, swap them.  
 4. End  
 
----
-
-### 🧾 Selection Sort  
+ Selection Sort  
 1. Start  
 2. Input array of size `n`.  
 3. Repeat for `i = 0` to `n-1`:  
@@ -49,9 +40,7 @@ Sorting is the process of arranging data in a particular order (ascending or des
    - Swap `arr[i]` and `arr[minIndex]`.  
 4. End  
 
----
-
-### 🧾 Insertion Sort  
+Insertion Sort  
 1. Start  
 2. Input array of size `n`.  
 3. Repeat for `i = 1` to `n-1`:  
@@ -62,9 +51,7 @@ Sorting is the process of arranging data in a particular order (ascending or des
    - Insert `key` at `arr[j+1]`.  
 4. End  
 
----
-
-### 🧾 Merge Sort  
+Merge Sort  
 1. Start  
 2. If array has more than one element:  
    - Divide array into two halves.  
@@ -72,9 +59,7 @@ Sorting is the process of arranging data in a particular order (ascending or des
    - Merge the two sorted halves.  
 3. End  
 
----
-
-### 🧾 Quick Sort  
+Quick Sort  
 1. Start  
 2. If array has more than one element:  
    - Choose a pivot element.  
@@ -84,9 +69,7 @@ Sorting is the process of arranging data in a particular order (ascending or des
    - Recursively apply quick sort on left and right subarrays.  
 3. End  
 
----
-
-### 🧾 Heap Sort  
+Heap Sort  
 1. Start  
 2. Build a max heap from the array.  
 3. Repeat until heap size > 1:  
@@ -95,9 +78,7 @@ Sorting is the process of arranging data in a particular order (ascending or des
    - Heapify the root.  
 4. End  
 
----
-
-### 🧾 Bucket Sort  
+Bucket Sort  
 1. Start  
 2. Input array of size `n`.  
 3. Create `k` empty buckets.  
@@ -106,9 +87,7 @@ Sorting is the process of arranging data in a particular order (ascending or des
 6. Concatenate all buckets in order to form the sorted array.  
 7. End  
 
----
-
-## 🧩 Time Complexity Comparison  
+Time Complexity Comparison  
 
 | Algorithm       | Best Case | Worst Case | Average Case | Space Complexity | Stable |
 |-----------------|-----------|------------|--------------|------------------|--------|
@@ -120,10 +99,7 @@ Sorting is the process of arranging data in a particular order (ascending or des
 | Heap Sort       | O(n log n)| O(n log n) | O(n log n)   | O(1)             | No     |
 | Bucket Sort     | O(n+k)    | O(n²)      | O(n+k)       | O(n+k)           | Yes    |
 
----
-
-## 🚀 Applications  
-
+Applications  
 - **Bubble Sort** → Educational purposes, small datasets.  
 - **Selection Sort** → When memory writes are costly.  
 - **Insertion Sort** → Small or nearly sorted datasets.  
@@ -132,10 +108,7 @@ Sorting is the process of arranging data in a particular order (ascending or des
 - **Heap Sort** → Priority queues, scheduling algorithms.  
 - **Bucket Sort** → Uniformly distributed data (e.g., floating-point numbers, percentages).  
 
----
-
-## 🧠 Conclusion  
-
+Conclusion  
 - **Bubble, Selection, and Insertion Sort** are simple but inefficient for large datasets.  
 - **Merge Sort and Quick Sort** are efficient divide-and-conquer algorithms widely used in practice.  
 - **Heap Sort** is useful when constant space and guaranteed O(n log n) performance are required.  
